@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul-Saboor - Portfolio</title>
+    <!-- Include Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+    <!-- Floating Blocks Background -->
+    <div class="floating-bg">
+        <div class="floating-block block-1"></div>
+        <div class="floating-block block-2"></div>
+        <div class="floating-block block-3"></div>
+        <div class="floating-block block-4"></div>
+        <div class="floating-block block-5"></div>
+        <div class="floating-block block-6"></div>
+        <div class="floating-block block-7"></div>
+        <div class="floating-block block-8"></div>
+        <div class="floating-block block-9"></div>
+        <div class="floating-block block-10"></div>
+        <div class="floating-block block-11"></div>
+        <div class="floating-block block-12"></div>
+        <div class="floating-block block-13"></div>
+        <div class="floating-block block-14"></div>
+        <div class="floating-block block-15"></div>
+        <div class="floating-block block-16"></div>
+        <div class="floating-block block-17"></div>
+        <div class="floating-block block-18"></div>
+        <div class="floating-block block-19"></div>
+        <div class="floating-block block-20"></div>
+    </div>
+
+    
+    <!-- Navigation -->
+<nav>
+    <div class="container nav-container">
+        <div class="logo">
+            <span class="logo-text">AS</span>
+        </div>
+        <div class="nav-links">
+            <button class="nav-link" onclick="scrollToSection('home')">Home</button>
+            <button class="nav-link" onclick="scrollToSection('about')">About</button>
+            <button class="nav-link" onclick="scrollToSection('education')">Education</button>
+            <button class="nav-link" onclick="scrollToSection('skills')">Skills</button>
+            <button class="nav-link" onclick="scrollToSection('projects')">Projects</button>
+            <button class="nav-link" onclick="scrollToSection('contact')">Contact</button>
+            <button class="theme-toggle" id="themeToggle">
+                <i data-lucide="moon" id="themeIcon"></i>
+            </button>
+        </div>
+        <button class="nav-toggle" id="navToggle">
+            <i data-lucide="menu"></i>
+        </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-nav-link" onclick="scrollToSection('home')">Home</button>
+        <button class="mobile-nav-link" onclick="scrollToSection('about')">About</button>
+        <button class="mobile-nav-link" onclick="scrollToSection('education')">Education</button>
+        <button class="mobile-nav-link" onclick="scrollToSection('skills')">Skills</button>
+        <button class="mobile-nav-link" onclick="scrollToSection('projects')">Projects</button>
+        <button class="mobile-nav-link" onclick="scrollToSection('contact')">Contact</button>
+        <button class="mobile-nav-link" id="mobileThemeToggle">
+            <i data-lucide="moon" id="mobileThemeIcon"></i>
+            Toggle Theme
+        </button>
+    </div>
+</nav>
+    <!-- Hero Section -->
+    <section id="home" class="section hero">
+        <div class="container hero-content">
+            <h1 class="hero-title">Abdul Saboor </h1>
+            <div class="typewriter-container">
+                <span class="typewriter-text" id="typewriter"></span>
+            </div>
+            <p class="hero-description">
+                Crafting beautiful digital experiences with modern technologies and innovative solutions. 
+                Passionate about creating user-friendly applications that solve real-world problems.
+            </p>
+            
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i data-lucide="linkedin"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i data-lucide="mail"></i>
+                </a>
+            </div>
+
+            <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                <i data-lucide="zap"></i>
+                View My Work
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Passionate developer with year of experience in creating innovative web solutions</p>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a full-stack developer who loves turning ideas into reality through code. My journey in web development started a years ago, and I've been constantly learning and evolving ever since.
+                    </p>
+                    <p>
+                        I specialize in building modern web applications with various cutting-edge technologies. When I'm not coding, you'll find me exploring new design trends or contributing to open-source projects.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i data-lucide="code" class="skill-icon"></i>
+                        <h3 class="skill-title">Clean Code</h3>
+                        <p class="skill-description">Writing maintainable and scalable code</p>
+                    </div>
+                    <div class="skill-card blue">
+                        <i data-lucide="palette" class="skill-icon"></i>
+                        <h3 class="skill-title">Creative Design</h3>
+                        <p class="skill-description">Designing beautiful user interfaces</p>
+                    </div>
+                    <div class="skill-card purple">
+                        <i data-lucide="rocket" class="skill-icon"></i>
+                        <h3 class="skill-title">Performance</h3>
+                        <p class="skill-description">Optimizing for speed and efficiency</p>
+                    </div>
+                    <div class="skill-card pink">
+                        <i data-lucide="zap" class="skill-icon"></i>
+                        <h3 class="skill-title">Innovation</h3>
+                        <p class="skill-description">Always exploring new technologies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+<section id="education" class="section education">
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">My academic journey and qualifications</p>
+        
+        <div class="education-timeline">
+            <!-- Education Item 1 -->
+            <div class="education-item">
+                <div class="education-icon">
+                    <i data-lucide="graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <div class="education-date">
+                        <i data-lucide="calendar"></i>
+                        <span>2014 – 2022</span>
+                        <span class="education-status completed">Completed</span>
+                    </div>
+                    <h3 class="education-title">Allied School Bhakkar</h3>
+                    <h4 class="education-institution">Primary Education | Classes 1–8</h4>
+                    <p class="education-description">
+                        Completed primary and middle school education with focus on foundational subjects and computer basics. Built strong academic foundation and developed early interest in technology.
+                    </p>
+                    <div class="education-highlights">
+                        <span class="highlight-badge">Foundational Subjects</span>
+                        <span class="highlight-badge">Computer Basics</span>
+                        <span class="highlight-badge">Mathematics</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Item 2 -->
+            <div class="education-item">
+                <div class="education-icon">
+                    <i data-lucide="school"></i>
+                </div>
+                <div class="education-content">
+                    <div class="education-date">
+                        <i data-lucide="calendar"></i>
+                        <span>2022 – 2024</span>
+                        <span class="education-status completed">Completed</span>
+                    </div>
+                    <h3 class="education-title">Govt. Model High School Bhakkar</h3>
+                    <h4 class="education-institution">Secondary Education (Matric) | Classes 9–10</h4>
+                    <p class="education-description">
+                        Completed Matriculation with focus on Science and Mathematics. Developed strong analytical and problem-solving skills. Achieved excellent academic performance in technical subjects.
+                    </p>
+                    <div class="education-highlights">
+                        <span class="highlight-badge">Science</span>
+                        <span class="highlight-badge">Mathematics</span>
+                        <span class="highlight-badge">Analytical Skills</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Item 3 -->
+            <div class="education-item">
+                <div class="education-icon">
+                    <i data-lucide="award"></i>
+                </div>
+                <div class="education-content">
+                    <div class="education-date">
+                        <i data-lucide="calendar"></i>
+                        <span>2024 – 2027</span>
+                        <span class="education-status ongoing">Ongoing</span>
+                    </div>
+                    <h3 class="education-title">Government College of Technology Bhakkar</h3>
+                    <h4 class="education-institution">Higher Secondary / Diploma | DAE in CIT</h4>
+                    <p class="education-description">
+                        Currently pursuing Diploma of Associate Engineering in Computer Information Technology. Gaining comprehensive knowledge in programming, networking, software development, and database management. Building practical skills for modern IT industry.
+                    </p>
+                    <div class="education-highlights">
+                        <span class="highlight-badge">Programming</span>
+                        <span class="highlight-badge">Networking</span>
+                        <span class="highlight-badge">Software Development</span>
+                        <span class="highlight-badge">Database Management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title skills-title">Skills & Expertise</h2>
+            <p class="section-subtitle">Technologies I work with</p>
+            
+            <div class="skills-grid-cols">
+                <!-- Frontend -->
+                <div class="skill-category frontend">
+                    <h3 class="category-title">Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">React</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">TypeScript</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Tailwind CSS</span>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Next.js</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category backend">
+                    <h3 class="category-title">Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">PostgreSQL</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-percent">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">GraphQL</span>
+                                <span class="skill-percent">79%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="79"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category tools">
+                    <h3 class="category-title">Tools & Others</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Git</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Docker</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">AWS</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Figma</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title projects-title">Featured Projects</h2>
+            <p class="section-subtitle">Some of my recent work</p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop" alt="E-Commerce Platform" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">Full-stack e-commerce solution with payment integration, admin dashboard, and real-time inventory management.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-placeholder">
+                        <div class="placeholder-icons">
+                            <i data-lucide="github" class="placeholder-icon"></i>
+                            <i data-lucide="external-link" class="placeholder-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Analytics Dashboard</h3>
+                        <p class="project-description">Real-time analytics dashboard with interactive charts, data visualization, and custom reporting features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">D3.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1461773518188-b3e86f98242f?w=800&h=600&fit=crop" alt="Mobile Fitness App" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Mobile Fitness App</h3>
+                        <p class="project-description">Cross-platform mobile app for tracking workouts, nutrition, and health metrics with social features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">GraphQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's work together on your next project</p>
+            
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-header">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <p class="contact-value">abdulsaboor9825211@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item purple">
+                        <div class="contact-header">
+                            <div class="contact-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div>
+                                <p class="contact-label">Phone</p>
+                                <p class="contact-value">+92 325 324 0251</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item pink">
+                        <div class="contact-header">
+                            <div class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div>
+                                <p class="contact-label">Location</p>
+                                <p class="contact-value">Bhakkar, PN, PK</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item cyan">
+                        <h3 class="skill-title">Let's Create Something Amazing</h3>
+                        <p class="skill-description">
+                            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email</label>
+                            <input type="email" id="email" class="form-input" placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea id="message" class="form-input form-textarea" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i data-lucide="send"></i>
+                            Send Message
+                        </button>
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-top">
+                    <div class="footer-logo">AbdulSaboor</div>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="#" class="footer-social-link">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p class="footer-copyright">© 2025 Made with ❤️ by Abdul-Saboor</p>
+                    <div class="footer-links">
+                        <button class="footer-link" onclick="scrollToSection('home')">Home</button>
+                        <button class="footer-link" onclick="scrollToSection('about')">About</button>
+                        <button class="footer-link" onclick="scrollToSection('education')">Education</button>
+                        <button class="footer-link" onclick="scrollToSection('skills')">Skills</button>
+                        <button class="footer-link" onclick="scrollToSection('projects')">Projects</button>
+                        <button class="footer-link" onclick="scrollToSection('contact')">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
